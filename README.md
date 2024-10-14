@@ -7,6 +7,7 @@
 </ul>
 
 <code>
+# Usar para encontrar a localização do mouse
 #! python3
 import pyautogui, sys
 print('Press Ctrl-C to quit.')
