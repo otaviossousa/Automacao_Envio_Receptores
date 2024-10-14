@@ -5,3 +5,17 @@
   <li>Foi criada unicamente para a seleção dos receptores</li>
   <li>Não mecher no mouse durante a execução do programa pois a biblioteca pyautogui utiliza as coordenadas da tela para a seleção dos elementos da página</li>
 </ul>
+
+<code>
+#! python3
+import pyautogui, sys
+print('Press Ctrl-C to quit.')
+try:
+    while True:
+        x, y = pyautogui.position()
+        positionStr = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
+        print(positionStr, end='')
+        print('\b' * len(positionStr), end='', flush=True)
+except KeyboardInterrupt:
+    print('\n')
+</code>
